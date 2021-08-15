@@ -1,0 +1,317 @@
+@import url("../scss/fonts.scss");
+body {
+  box-sizing: border-box;
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.pre-head {
+  background-color: gray;
+  display: flex;
+  background: url(../imgs/fone-1.svg);
+  background-size: cover;
+  flex-direction: column;
+}
+
+.head-menu {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-side_menu__menu {
+  padding-top: 16px;
+}
+
+.head-side_menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h-s_m__list_items .link {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.h-s_m__list_items:last-child {
+  margin-right: 0px;
+}
+
+.head-side_menu__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.link.h-s_m__contacts-items_lang {
+  text-align: center;
+  width: 29px;
+  height: 24px;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.link.h-s_m__contacts-items_lang:hover {
+  background: #EDEDF7;
+  color: gray;
+}
+
+.link.h-s_m__contacts-items_lang:active {
+  background: #F0145A;
+  color: white;
+}
+
+.link.h-s_m__contacts-items {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.dot {
+  margin-right: 10px;
+}
+
+.head__adress {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.head__fon-leter {
+  background-image: url(../imgs/big-leter-fon.svg), url(../imgs/tiny-leters-fon.svg);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.head__gradient {
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+}
+
+.big-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-area__text {
+  padding-top: 243px;
+  margin-bottom: 290px;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.circle-button {
+  margin-bottom: 20px;
+}
+
+.post-head {
+  background-image: url(../imgs/fone-2.svg);
+  background-size: cover;
+}
+
+.post-head__menu {
+  display: flex;
+  justify-content: center;
+  margin-right: 113px;
+}
+
+.post-head__menu-list {
+  width: 527px;
+}
+
+.post-head__menu-list-items {
+  text-align: right;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.post-head__menu-list-item:last-child {
+  margin-bottom: opx;
+}
+
+.post-head__menu-list-items .link {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  color: #B3B3BA;
+}
+
+.post-head__menu-list-items .link:hover {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #F0145A;
+}
+
+.post-head__menu-line {
+  content: "";
+  border-right: 4px solid #B3B3BA;
+  margin-right: 40px;
+}
+
+.post-head__discription-h {
+  padding-top: 51px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.post-head__discription-parag {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.post-head__benefits-services {
+  display: flex;
+  align-items: center;
+}
+
+.link.benefits {
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.post-head__benefits-services {
+  padding-top: 80px;
+}
+
+.post-head__benefits-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #F0145A;
+  margin-bottom: 80px;
+}
+
+.post-head__benefits-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.post-head__benefits-box__card {
+  width: 30%;
+  margin-right: 40px;
+  height: 313px;
+  margin-bottom: 58px;
+}
+
+.post-head__benefits-box__card:nth-child(3) {
+  margin-right: 0px;
+}
+
+.post-head__benefits-box__card:last-child {
+  margin-bottom: 100px;
+}
+
+.post-head__benefits-box__card-title {
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #24A3FF;
+}
+
+.post-head__benefits-box__card-descriotion {
+  padding-top: 15px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+header {
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0px 8px 2px 0px rgba(34, 60, 80, 0.21), 0px 16px 2px 0px rgba(34, 60, 80, 0.21);
+}
+
+.team-card {
+  margin-top: 40px;
+  display: flex;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+
+.link.description-team {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.team-card__foto {
+  width: 413px;
+  height: 500px;
+  margin-right: 40px;
+}
+
+.team-card__description-team-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #F0145A;
+  margin-bottom: 20px;
+}
+
+.team-card__description {
+  padding-top: 40px;
+}
+
+.team-card__description-team-name {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #B3B3BA;
+  margin-bottom: 5px;
+}
+
+.team-card__description-team-position {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+/*# sourceMappingURL=style.css.map */
