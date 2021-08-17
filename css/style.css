@@ -314,4 +314,19 @@ header {
   color: #B3B3BA;
 }
 
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  margin-top: 20px;
+  margin-right: 14px;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-pagination-bullet:last-child {
+  margin-right: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
