@@ -1,4 +1,27 @@
-@import url("../scss/fonts.scss");
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/subset-TTNorms-Bold.eot");
+  src: url("../fonts/subset-TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TTNorms-Bold.woff2") format("woff2"), url("../fonts/subset-TTNorms-Bold.woff") format("woff"), url("../fonts/subset-TTNorms-Bold.ttf") format("truetype"), url("../fonts/subset-TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/subset-TTNorms-Regular.eot");
+  src: url("../fonts/subset-TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TTNorms-Regular.woff2") format("woff2"), url("../fonts/subset-TTNorms-Regular.woff") format("woff"), url("../fonts/subset-TTNorms-Regular.ttf") format("truetype"), url("../fonts/subset-TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/subset-TTNorms-Medium.eot");
+  src: url("../fonts/subset-TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TTNorms-Medium.woff2") format("woff2"), url("../fonts/subset-TTNorms-Medium.woff") format("woff"), url("../fonts/subset-TTNorms-Medium.ttf") format("truetype"), url("../fonts/subset-TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   box-sizing: border-box;
   font-family: "TT Norms Pro", sans-serif;
@@ -135,6 +158,7 @@ body {
 .post-head {
   background-image: url(../imgs/fone-2.svg);
   background-size: cover;
+  border-radius: 0px 0px 12px 12px;
 }
 
 .post-head__menu {
@@ -258,6 +282,10 @@ body {
 }
 
 header {
+  position: relative;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0px 0px 12px 12px;
   box-shadow: 0px 8px 2px 0px rgba(34, 60, 80, 0.21), 0px 16px 2px 0px rgba(34, 60, 80, 0.21);
 }
@@ -327,6 +355,197 @@ header {
 
 .swiper-pagination-bullet:last-child {
   margin-right: 0px;
+}
+
+.cases-fon {
+  background-color: #F5F5FA;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.cases__card {
+  border: 1px solid white;
+}
+.cases__card:nth-child(2) {
+  width: 32%;
+}
+.cases__card:nth-child(3) {
+  border-right: 0px;
+  border-radius: 0px 12px 0px 0px;
+  width: 34%;
+}
+.cases__card:nth-child(5) {
+  width: 24%;
+}
+.cases__card:nth-child(5) .cases__card-title {
+  padding-top: 49px;
+}
+.cases__card:nth-child(6) {
+  width: 34%;
+}
+.cases__card:nth-child(7) {
+  width: 40%;
+  border-right: none;
+}
+.cases__card:hover {
+  background: #EDEDF7;
+}
+
+.cases__card:hover ~ .cases__card.cases-description {
+  display: block;
+}
+
+.first-card:hover ~ .cases__card.cases-description {
+  display: block;
+}
+
+.first-card__top + div:hover {
+  background: #EDEDF7;
+}
+
+.first-card {
+  width: 33%;
+}
+
+.first-card__top {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-radius: 12px 0px 0px 0px;
+  padding: 20px 280px 20px 20px;
+}
+
+.link.first-card__top-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F0145A;
+}
+
+.cases__card-title-first {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #686887;
+  padding: 48px 20px 20px 20px;
+}
+
+.cases__card-name {
+  padding: 0px 20px 20px 20px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.cases__card-title {
+  padding: 105px 20px 20px 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #686887;
+}
+
+.cases__card.cases-description {
+  display: none;
+  background: #EDEDF7;
+}
+
+.cases-description-text {
+  padding: 40px 227px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.container_big {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust-us__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trust-us__title-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #323264;
+}
+
+.trust-us__cards-items {
+  width: 360px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.trust-us__cards-items:nth-child(1) {
+  background-color: #1C4280;
+  background-image: url(../imgs/trust-logo-01.svg);
+}
+.trust-us__cards-items:nth-child(2) {
+  background-color: #143646;
+  background-image: url(../imgs/trust-logo-02.svg);
+}
+.trust-us__cards-items:nth-child(3) {
+  background-color: #F48B30;
+  background-image: url(../imgs/trust-logo-03.svg);
+}
+.trust-us__cards-items:nth-child(4) {
+  background-color: #9E4DC3;
+  background-image: url(../imgs/trust-logo-04.svg);
+}
+.trust-us__cards-items:nth-child(5) {
+  background-color: #FD9339;
+  background-image: url(../imgs/trust-logo-05.svg);
+}
+.trust-us__cards-items:nth-child(6) {
+  background-color: #E2E2E4;
+  background-image: url(../imgs/trust-logo-06.svg);
+}
+.trust-us__cards-items:nth-child(7) {
+  background-color: #C71C36;
+  background-image: url(../imgs/trust-logo-07.svg);
+}
+.trust-us__cards-items:nth-child(8) {
+  background-color: #DCF3F9;
+  background-image: url(../imgs/trust-logo-08.svg);
+}
+.trust-us__cards-items:nth-child(9) {
+  background-color: #EAEAEA;
+  background-image: url(../imgs/trust-logo-09.svg);
+}
+.trust-us__cards-items:nth-child(10) {
+  background-color: #282240;
+  background-image: url(../imgs/trust-logo-10.svg);
+}
+.trust-us__cards-items:nth-child(11) {
+  background-color: #1D4568;
+  background-image: url(../imgs/trust-logo-11.svg);
+}
+.trust-us__cards-items:nth-child(12) {
+  background-color: #000000;
+  background-image: url(../imgs/trust-logo-12.svg);
+}
+
+.talks {
+  background-color: #F5F5FA;
 }
 
 /*# sourceMappingURL=style.css.map */
